@@ -1,0 +1,30 @@
+body {
+    font-family: Arial,  sans-serif;
+    padding: 30px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    margin-bottom:40px;
+}
+
+/* outer box for margin */
+.box-outer {
+    margin:30px;
+    background-color: azure;
+}
+
+/*Middle box for border */
+.box-middle {
+    border: 5px solid #00796b;
+    box-sizing: border-box;
+}
+
+/*inner box for padding */
+.box inner {
+    padding: 20px;
+    background-color: beige;
+    box-sizing: border-box;
+    text-align: center;
+    font-size:18px;
+}

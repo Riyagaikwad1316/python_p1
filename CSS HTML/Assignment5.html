@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collapsing Example</title>
+    <link rel="stylesheet" href="..css/Assignment5.css">
+    <style>
+        .box {
+            height: 10px;
+            background-attachment: lightblue;
+            /*Apply margins that will collapse */
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        /*Add a border to visually separate the elements */
+        .box1 {
+            background-color: lightcoral;
+        }
+
+        .box2 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+
+    <!--
+    Margin collapsing explanation:
+    The first div has a margin-bottom of 30px.
+    The second div has a margin-top of 50px.
+    Instead of adding together (30px + 50px = 80px), only the larger margin (50px) is applied.
+    Thus is due to verticak margin collapsing in css.
+    so the visible space between the two divs is only 50px, not 80px.
+    -->
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-commerce Product Grid</title>
+  <link rel="stylesheet" href="../Last Assignment.css/E-commerce product grid.css">
+ 
+</head>
+<body>
+
+  <div class="product-grid">
+    <!-- Repeat 12 product cards -->
+    <div class="product-card">
+      <div class="product-image"></div>
+      <h3 class="product-title">Product 1</h3>
+      <p class="product-price">$19.99</p>
+    </div>
+    <!-- You can copy the above block 11 more times -->
+    <!-- For demo, using JS to generate 12 cards -->
+    <script>
+      const grid = document.querySelector('.product-grid');
+      for (let i = 2; i <= 12; i++) {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <div class="product-image"></div>
+          <h3 class="product-title">Product ${i}</h3>
+          <p class="product-price">$${(Math.random() * 100).toFixed(2)}</p>
+        `;
+        grid.appendChild(card);
+      }
+    </script>
+  </div>
+
+</body>
+</html>

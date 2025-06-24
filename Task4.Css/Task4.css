@@ -1,0 +1,11 @@
+.parent {
+    font-size: 18px;
+    color:rebeccapurple;
+    border: 2px solid rgb(36, 25, 25);
+}
+
+/*Table styling to observe inheritance*/
+table, td {
+    border: 1px solid rgb(17, 17, 17,)
+    padding: 8px;
+}
